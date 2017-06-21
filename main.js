@@ -49,8 +49,9 @@ window.addEventListener("load", function () {
     }
   }, 1000);
   if (kongregateAPI) {
-    kongregateAPI.loadAPI(function () {
-      kongregateAPI.getAPI().stats.submit('Cottage Cheese Made', data.cheese);
+    var api = window.kongregateAPI;
+    api.loadAPI(function () {
+      api.getAPI().stats.submit('Cottage Cheese Made', data.cheese);
     });
     delete window.kongregateAPI;
   }
