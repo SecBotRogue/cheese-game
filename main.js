@@ -48,4 +48,10 @@ window.addEventListener("load", function () {
       document.getElementById('showferment').classList.remove('hide');
     }
   }, 1000);
+  if (kongregateAPI) {
+    kongregateAPI.loadAPI(function () {
+      kongregateAPI.getAPI().stats.submit('Cottage Cheese Made', data.cheese);
+    });
+    delete window.kongregateAPI;
+  }
 });
