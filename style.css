@@ -5,3 +5,6 @@ body {
 #showcheese.hide {
   display: none;
 }
+html {
+  background: white;
+}
