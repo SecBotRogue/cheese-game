@@ -18,7 +18,7 @@ window.addEventListener("load", function () {
   }
   if (data.milk && data.lastmilk) {
     var ferment = Date.now() - data.lastmilk;
-    var factor = 1000 * 5;
+    var factor = 1000 * 60 * 60 * 24 * 365 * 5;
     if (ferment >= factor) {
       var cheese = ferment / factor | 0;
       if (cheese >= data.milk) {
