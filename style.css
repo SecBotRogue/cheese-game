@@ -1,0 +1,7 @@
+body {
+  font-family: Monospace;
+}
+#showferment.hide,
+#showcheese.hide {
+  display: none;
+}
